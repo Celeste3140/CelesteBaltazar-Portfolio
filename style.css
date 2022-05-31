@@ -1,0 +1,202 @@
+:root {
+    --titlefont: monospace,'Courier New', Courier;
+    --fontcolor: black;
+    --backgroundcolor: rgb(204, 213, 174);
+    --bodyfontcolor: black;
+}
+body {
+    background-color:rgb(254, 250, 224) ;
+}
+header h1 {
+    margin: auto;
+    padding: 20px;
+    font-family: var(--titlefont);
+    /* font-weight: 500; */
+    font-size: 65px;
+    color: var(--fontcolor);
+    text-align: center;
+    border-radius: 0px 0px 25px 25px;
+    background: var(--backgroundcolor);
+    height: 50px;
+}
+.topnav {
+    border-radius: 0px 0px 25px 25px;
+    background-color: var(--backgroundcolor);
+    overflow: hidden;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.topnav a {
+    /* float: left; */
+    color: var(--fontcolor);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--titlefont);
+}
+.topnav a:hover {
+    background-color: rgb(233, 237, 201);
+    color: black;
+}
+main {
+    display: flex;
+  }
+.avatar {
+    width: 255px;
+    display: block;
+    margin-left: 25%;
+    border-radius: 120px;
+    padding: 0px;
+    display: inline-flex;
+}
+.about-section {
+  column-count: 2;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-color: black;
+    /* color: var(--fontcolor); */
+    /* text-align: center; */
+    font-family: var(--titlefont);
+    /* display: inline; */
+    padding-top: 70px;
+}
+#AboutMe {
+    font-size: 60px;
+    margin-left: 25%;
+    
+}
+#AboutP {
+    font-size: 30px;
+    position: relative;
+    display: inline-table;
+}
+.Work {
+    color: var(--bodyfontcolor);
+    text-align: center;
+    font-family: var(--titlefont);
+    font-size: 65px;
+}
+.container {
+    position: relative;
+    width: 50%;
+    display: grid;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Workimage img {
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(212, 163, 115);
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.Contact-me {
+    color: var(--bodyfontcolor);
+    text-align: center;
+    font-family: var(--titlefont);
+    font-size: 65px;
+}
+#contact-resources {
+    display: inline-flex;
+    margin-left: 30%;
+    list-style: none;
+}
+#Telephone {
+    padding: 30px;
+}
+#Linkedin {
+    padding: 30px;
+}
+#Email {
+    padding: 30px;
+}
+#Github {
+    padding: 30px;
+}
+.resume {
+    color: var(--bodyfontcolor);
+    text-align: center;
+    font-family: var(--titlefont);
+    font-size: 65px;
+}
+#resume-logo img {
+    margin-left: 45%;
+    padding: 25px 25px 40px 25px; 
+    display: flex;
+    width: 2%;
+    transition: width 2s;
+}
+#resume-logo img:hover {
+    width: 10%;
+}
+footer {
+    padding: 20px;
+    font-family: var(--titlefont);
+    background-color: var(--backgroundcolor);
+    color: var(--fontcolor);
+    text-align: center;
+    border-radius: 25px;
+}
+  
+  @media screen and (max-width: 768px) {
+#contact-resources, .about-section {
+    flex-direction: column;
+}
+.topnav a, .topnav {
+    flex-direction: column;
+    background-color: rgb(212, 163, 115);
+    font-size: 15px;
+    border-radius: none;
+    }
+header h1 {
+    font-size: 30px;
+    padding-top: 70px;
+    background-color: rgb(212, 163, 115);
+}
+.avatar {
+    display: none;
+}
+#AboutMe, #AboutP {
+    flex-direction: column;
+}
+body {
+    background-color: rgb(250, 237, 205);
+} 
+footer {
+    background-color: rgb(212, 163, 115);  
+}
+}
