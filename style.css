@@ -151,7 +151,8 @@ main {
     text-align: center;
     /* background-color: rgb(212, 163, 115) ; */
   }
-.Contact-me {
+
+  .Contact-me {
     color: var(--bodyfontcolor);
     text-align: center;
     font-family: var(--titlefont);
